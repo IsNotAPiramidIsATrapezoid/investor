@@ -26,7 +26,7 @@ public class Investor {
 	private String mail;
 	
 	@Column(name="investments") 
-	private String investments;
+	private long investments;
 	
 	@Column(name="profile") 
 	private String profile;
@@ -44,10 +44,10 @@ public class Investor {
 	public void setMail(String mail) {
 		this.mail = mail;
 	}
-	public String getInvestments() {
+	public long getInvestments() {
 		return investments;
 	}
-	public void setInvestments(String investments) {
+	public void setInvestments(long investments) {
 		this.investments = investments;
 	}
 	public String getProfile() {
